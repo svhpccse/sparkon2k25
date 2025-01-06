@@ -398,7 +398,7 @@
     } else if (lowerInput.includes('location') || lowerInput.includes('venue')) {
       response = 'The event will be held at SVHPC Campus.';
     } else {
-      response = 'For more details, please contact the department heads:';
+      response = 'For more details, please contact the department co-ordinators:';
       response += '<br><button onclick="window.open(\'https://wa.me/8072582882?text=Hello%2CSir!%20I%20need%20more%20information%20about%20the%20event.\', \'_blank\')">M. Mathiyazhagan (CSE / AIML)</button>';
       response += '<br><button onclick="window.open(\'https://wa.me/9965170923?text=Hello%2CMam!%20I%20need%20more%20information%20about%20the%20event.\', \'_blank\')">V. Poongothai (EEE)</button>';
       response += '<br><button onclick="window.open(\'https://wa.me/8072490515?text=Hello%2CSir!%20I%20need%20more%20information%20about%20the%20event.\', \'_blank\')">A. Moorthi (ECE / MLT)</button>';
