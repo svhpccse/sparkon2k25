@@ -822,6 +822,43 @@ section,
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
 }
 
+.animating-text {
+  font-size: 1.5rem;
+  font-weight: bold;
+  background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
+  background-size: 400% 400%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: rainbow-animation 5s ease infinite, zoom-animation 2s ease infinite;
+  margin-bottom: 1rem;
+}
+
+@keyframes rainbow-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes zoom-animation {
+
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+}
+
 /* Responsive Styles */
 @media (max-width: 768px) {
   .hero {
@@ -872,43 +909,6 @@ section,
 
   .count-box h4 {
     font-size: 12px;
-  }
-}
-
-.animating-text {
-  font-size: 1.5rem;
-  font-weight: bold;
-  background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
-  background-size: 400% 400%;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: rainbow-animation 5s ease infinite, zoom-animation 2s ease infinite;
-  margin-bottom: 1rem;
-}
-
-@keyframes rainbow-animation {
-  0% {
-    background-position: 0% 50%;
-  }
-
-  50% {
-    background-position: 100% 50%;
-  }
-
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-@keyframes zoom-animation {
-
-  0%,
-  100% {
-    transform: scale(1);
-  }
-
-  50% {
-    transform: scale(1.1);
   }
 }
 
