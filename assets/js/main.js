@@ -344,14 +344,17 @@
     retina_detect: true
   });
 
-
-  document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function () {
     const buttonContainer = document.querySelector(".button-container");
     const particlesContainer = document.getElementById("particles-js");
     const gradientBackground = "none";
 
-    buttonContainer.style.background = gradientBackground;
-    particlesContainer.style.pointerEvents = "none";
+    if (buttonContainer) {
+      buttonContainer.style.background = gradientBackground;
+    }
+    if (particlesContainer) {
+      particlesContainer.style.pointerEvents = "none";
+    }
   });
 
   // Add event listener to chat icon
